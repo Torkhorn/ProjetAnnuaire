@@ -1,0 +1,23 @@
+//Comment utiliser les branches sur Git ?
+
+- Pour créer une branche :
+$ git branch [nom de ma branche]
+
+- Pour vous placer sur une branche :
+$ git checkout [nom de la branche]
+
+/!\ On peut faire ces 2 commandes en 1 :
+$ git checkout -b [nom de la branche]
+
+//Maintenant, vous pouvez effectuer les modifications que vous souhaitez aux divers fichiers
+vim test.txt
+git add
+git commit
+git push origin mathieu
+
+//Après ça, il faut retourner sur la branche inférieure
+git checkout dev
+git merge mathieu
+git push origin dev
+
+
